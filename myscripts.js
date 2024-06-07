@@ -38,13 +38,13 @@ function playRound(humanChoice,computerChoice){
     console.log("Computer wins!")
     console.log(cChoice)
     computerScore++
-    console.log(computerScore)
+    console.log("computer score "+ computerScore)
  }
  else{
     console.log("Human wins!")
     console.log(cChoice)
     humanScore++
-    console.log(humanScore)
+    console.log("human score "+ humanScore)
  }
 }
 else{
@@ -52,4 +52,15 @@ else{
 }
 }
 
-playRound()
+
+function playGame(){
+
+    playRound()
+    playRound()
+    playRound()
+    playRound()
+    playRound()
+    console.log("final human score= "+humanScore)
+    console.log("final computer score= "+computerScore)
+}
+playGame()
